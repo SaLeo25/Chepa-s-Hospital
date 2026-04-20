@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Los colores de Chepa's Hospital */
+  --color-hospital-header: #088395;   /* Teal */
+  --color-hospital-navy: #071952;     /* Navy */
+  --color-hospital-accent: #37B7C3;   /* Cyan */
+  --color-hospital-bg: #EBF4F6;       /* Fondo claro */
+  --color-hospital-red: #AC211F;      /* Cerrar sesión */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-hospital-bg);
+    color: var(--color-hospital-navy);
+    @apply antialiased;
+  }
+}
