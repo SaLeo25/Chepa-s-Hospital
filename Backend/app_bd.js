@@ -109,7 +109,7 @@ app.get('/api/consultas/doctor/:id', verifyToken, async (req, res) => {
     }
 });
 
-// Login (Autenticación) - REEMPLAZA ESTE BLOQUE
+// Login (Autenticación) 
 app.post('/api/login', async (req, res) => {
     const { usuario, contrasena } = req.body;
 
